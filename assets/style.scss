@@ -1,0 +1,473 @@
+
+$header-height: 86.3rem;
+$primary-color: #7287ae;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+@mixin ins-flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    max-width: 144rem;
+    font-family: "Ubuntu";
+    position: relative;
+}
+.header {
+    width: 144rem;
+    height: $header-height;
+    position: relative;
+    background: url(../img/Shape.png) bottom center/cover no-repeat;
+    padding: 6.8rem 13.6rem 0 13.6rem;
+    overflow: hidden;
+    z-index: 1;
+    &__heading {
+        @include ins-flex();
+        margin-bottom: 14.9rem;
+    }
+    &__logo {
+        width: 29.9rem;
+        height: 5.1rem;
+    }
+    &__toolbar {
+        @include ins-flex();
+        &-item {
+            font-size: 2.5rem;
+            color: #ffffff;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 4.7rem;
+        }
+    }
+    &__content {
+        text-align: center;
+        @include ins-flex();
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 10.3rem;
+        line-height: 10.3rem;
+        color: #ffffff; 
+        font-weight: 700;
+        text-align: center;
+        @include ins-flex();
+        flex-direction: column;
+        margin-bottom: 6.5rem;
+    }
+    &__desc {
+        width: 69.5rem;
+        height: 11.5rem;
+        font-size: 3.3rem;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Lato";
+        text-align: center;
+    }
+    &__dot {
+        &-1 {
+            position: absolute;
+            right: -1.6rem;
+            top: 43rem;
+            width: 10rem;
+            height: 18.2rem;
+        }
+        
+    }
+}
+
+.container {
+    width: 144rem;
+    position: relative;
+    top: -19.5rem;
+    overflow: hidden;
+    &__dot-2 {
+        position: absolute;
+        left: 15.2rem;
+        top: 14.9rem;
+        width: 18.2rem;
+        height: 10.6rem;
+        z-index: 1;
+    }
+    &__round {
+        position: absolute;
+        right: -44.7rem;
+        top: -57.2rem;
+        width: 137.9rem;
+        height: 99rem;
+        z-index: 0;
+    }
+    &__cong {
+        position: absolute;
+        width: 59.2rem;
+        height: 45.6rem;  
+        right: -5.4rem;
+        top: -7.5rem;
+        z-index: 0;
+    }
+}
+
+.menu {
+    width: 144.1rem;
+    background-color: #e4edc2;
+    position: relative;
+    padding-bottom: 100px;
+    &__heading {
+        padding-top: 33.6rem;
+        font-size: 48px;
+        color: $primary-color;
+        font-weight: 700;
+        font-family: "Ubuntu";
+        // text-align: center;
+        margin-bottom: 10.8rem;
+    }
+    &__list {
+        @include ins-flex();
+        padding: 0 13.2rem;
+    }
+    &__item {
+        width: 338px;
+        // height: 529px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        &-img {
+            // width: 34.3rem;
+            // height: 29.9rem;
+        }
+        &-body {
+            // width: 33.9rem;
+            height: 22.7rem;
+            background-color: #ffffff;
+            padding-left: 24px;
+        }
+        &-heading {
+            font-size: 3.3rem;
+            color: #504f4f;
+            font-weight: 700;
+            font-family: "Ubuntu";
+            margin-bottom: 27px;
+            padding-top: 23px;
+        }
+        &-desc {
+            font-size: 2.5rem;
+            color: #504f4f;
+            font-weight: 400;
+            font-family: "Lato";
+            margin-bottom: 18px;
+        }
+        &-price {
+            font-size: 2.8rem;
+            letter-spacing: 0.2rem;
+            line-height: 6.6rem;
+            color: #565656;
+            font-weight: 700;
+            font-family: "Ubuntu";
+        }
+    }
+    &__btn {
+        margin-top: 105px;
+    }
+    &__dot {
+        right: 34px;
+        bottom: 105px;
+    }
+}
+
+.discount {
+    @include ins-flex();
+    flex-direction: column;
+    width: 100%;
+    height: 156rem;
+    background-color: #ffffff;
+    position: relative;
+    &__item {
+        height: 78rem;
+        background-color: #ffffff;
+        @include ins-flex();
+    }
+    &__img { 
+        height: 100%;
+    }
+    &__body {
+        height: 100%;
+        padding-left: 5.5rem;
+        padding-top: 19.8rem;
+    }
+    &__item:nth-child(2) &__body{
+        padding-left: 12.7rem;
+    }
+    &__item-heading {
+        font-size: 5.8rem;
+        color: #333333;
+        font-weight: 700;
+        font-family: "Ubuntu";
+        width: 43.3rem;
+        height: 13.8rem;
+        padding-left: 0.4rem;
+    }
+    &__item:nth-child(2) &__item-heading{
+        width: 49rem;
+    }
+    &__item-desc {
+        width: 55.6rem;
+        height: 14.6rem;
+        font-size: 2.9rem;
+        color: #333333;
+        font-weight: 400;
+        font-family: "Lato";
+        margin-top: 1.6rem;
+    }
+    &__btn {
+        margin-top: 3.7rem;
+        margin-left: 0.4rem;
+    }
+    &__dot {
+        top: 72rem;
+        left: 29.4rem;
+    }
+    &__dot2 {
+        right: 13.5rem;
+        bottom: -5.7rem;
+    }
+}
+
+.order {
+    width: 144rem;
+    background-color: $primary-color;
+    position: relative;
+    padding-bottom: 14rem;
+    &__heading {
+        font-size: 48px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Ubuntu";
+        padding-top: 9.3rem;
+        padding-bottom: 9.3rem;
+    }
+    &__body {
+        @include ins-flex();
+        justify-content: space-around;
+    }
+    &__item {
+        text-align: center;
+        &-number {
+            width: 10.6rem;
+            height: 10.6rem;
+            background-color: #fff;
+            font-size: 4.6rem;
+            line-height: 10.6rem;
+            color: #7287ae;
+            font-weight: 700;
+            font-family: "Ubuntu";
+            text-align: center;
+            border-radius: 50%;
+            margin: auto;
+            margin-bottom: 5.2rem;
+        }
+        &-heading {
+            font-size: 4.6rem;
+            line-height: 3rem;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Ubuntu";
+            margin-bottom: 3.8rem;
+        }
+        &-decs {
+            width: 32rem;
+            height: 7.2rem;
+            font-size: 1.9rem;
+            line-height: 2.3rem;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Lato";
+        }
+    }
+    &__dot {
+        left: 16.1rem;
+        bottom: -6.5rem;
+    }
+}
+.voucher {
+    width: 100%;
+    height: 67.9rem;
+    background: url(../img/deliver.png) bottom center/cover no-repeat;
+    text-align: center;
+    position: relative;
+    &__heading {
+        font-size: 8.1rem;
+        color: $primary-color;
+        font-weight: 700;
+        font-family: "Ubuntu";
+        text-transform: unset;
+        padding-top: 12.5rem;
+        padding-bottom: 4.1rem;
+    }
+    &__desc {
+        width: 91rem;
+        height: 17.5rem;
+        font-size: 2.9rem;
+        color: $primary-color;
+        font-weight: 400;
+        font-family: "Lato";
+        margin: auto;
+        margin-bottom: 2.2rem;
+    }
+    &__btn {
+        width: 44.2rem;
+        height: 9.9rem;
+        border-radius: 4.9rem;
+        background-color: $primary-color;
+        & span {
+            font-size: 3rem;
+            letter-spacing: 0.6rem;
+            line-height: 9.8rem;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Ubuntu";
+        }
+    }
+    &__dot {
+        right: 13.5rem;
+        bottom: -5.7rem;
+    }
+}
+
+.social {
+    height: 104.2rem;
+    background-color: #dfe9c1;
+    text-align: center;
+    position: relative;
+    &__quote {
+        font-size: 17.1rem;
+        color: #7287ae;
+        font-weight: 700;
+        font-family: "Raleway";
+        padding-top: 11.2rem;
+    }
+    &__desc {
+        width: 99rem;
+        height: 13.3rem;
+        font-size: 3.7rem;
+        line-height: 4.2rem;
+        color: #7287ae;
+        font-weight: 400;
+        font-family: "Lato";
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5.3rem;
+        margin-top: -5rem;
+    }
+    &__name {
+        font-size: 4.2rem;
+        line-height: 4.2rem;
+        color: #7287ae;
+        font-weight: 700;
+        font-family: "Ubuntu";
+        text-align: center;
+        margin-bottom: 8.2rem;
+    }
+    &__list {
+        @include ins-flex();
+        width: 26.7rem;
+        margin: auto;
+    }
+    &__item {
+        z-index: 3;
+        &:hover {
+            cursor: pointer;
+            & .social__item-icon {
+                opacity: 0.7;
+            }
+        }
+        &-icon {
+            width: 6.6rem;
+            height: 6.6rem;
+            font-size: 6.6rem;
+            line-height: 6.6rem;
+            color: $primary-color;
+        }
+    }
+    &__dot {
+        left: 21rem;
+        top: 55.7rem;
+    }
+    &__round {
+        position: absolute;
+        top: 42.7rem;
+        right: 53.8rem;
+        width: 129.7rem;
+        height: 92.8rem;
+    }
+    &__cong {
+        position: absolute;
+        top: 48.2rem;
+        left: -2.3rem;
+        width: 54.8rem;
+        height: 39.3rem;
+    }
+}
+.footer {
+    text-align: center;
+    &__item {
+        margin-top: 3rem;
+    }
+    &__about{
+        &-heading {
+            width: 16.1rem;
+            height: 3.2rem;
+            font-size: 2.5rem;
+            line-height: 3.3rem;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Ubuntu";
+            text-transform: uppercase;
+            margin: auto;
+            margin-bottom: 4.7rem;
+            margin-top: 5.2rem;
+        }
+        &-desc {
+            width: 53.7rem;
+            height: 14.0rem;
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Lato";
+        }
+        &-item {
+            &-of-item {
+                width: 16.1rem;
+                height: 1.7rem;
+                font-size: 2.1rem;
+                line-height: 3.3rem;
+                color: #ffffff;
+                font-weight: bold;
+                font-family: "Lato";
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__item:nth-child(2){
+        @include ins-flex();
+    }
+    
+}
+.footer1 {
+    width: 144rem;
+    height: 60.9rem;
+    position: absolute;
+    bottom: 0;
+    background: url(../img/Shape2.png) top center/cover no-repeat;
+    padding: 6.8rem 13.6rem 0 13.6rem;
+    z-index: 1;
+    @include ins-flex();
+}
